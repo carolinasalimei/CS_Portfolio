@@ -40,7 +40,7 @@ section {
 
 .about,
 .services,
-.skills,
+
 .teams,
 .feed,
 .contact,
@@ -421,4 +421,62 @@ section .title {
 .about .about-content .right a:hover {
     color: crimson;
     background: none;
+}
+
+/* services section styling */
+.services,
+.teams {
+    color: #fff;
+    background: #102954;
+}
+
+.services .title::before,
+.teams .title::before,
+.feed .title::before {
+    background: #fff;
+}
+
+.services .title::after,
+.teams .title::after,
+.feed.title::before {
+    background: #102B4A;
+
+}
+
+.services .serv-content .card {
+    width: calc(25% - 15px);
+    background: #102B4A;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: #00DFA5;
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
